@@ -1,12 +1,12 @@
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import React from 'react';
-import useAuth from './../../../../hooks/useAuth';
+// import useAuth from './../../../../hooks/useAuth';
 
 const CheckOutForm = ({appointment}) => {
-const {price, patientName, _id}=appointment;
+const {price}=appointment;
     const stripe = useStripe();
     const elements=useElements()
-    const { user } = useAuth();
+    // const { user } = useAuth();
     
     
     
