@@ -17,7 +17,7 @@ const AddDoctor = () => {
         formData.append('email', email);
         formData.append('image', image);
 
-        fetch('https://stark-caverns-04377.herokuapp.com/doctors', {
+        fetch('https://thawing-forest-09797.herokuapp.com/doctors', {
             method: 'POST',
             body: formData
         })
