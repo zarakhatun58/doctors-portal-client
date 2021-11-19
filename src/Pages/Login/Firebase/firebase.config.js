@@ -8,3 +8,13 @@ const firebaseConfig = {
   };
   
   export default firebaseConfig;
+  
+   /*
+     apiKey: "AIzaSyBJMkX3uhUgdwKnviItIh-5sA9S3IEjNpk",
+  authDomain: "doctors-portal-ae96f.firebaseapp.com",
+  projectId: "doctors-portal-ae96f",
+  storageBucket: "doctors-portal-ae96f.appspot.com",
+  messagingSenderId: "683917265704",
+  appId: "1:683917265704:web:ab09a256ce9b8155f95e1d"
+  
+  */

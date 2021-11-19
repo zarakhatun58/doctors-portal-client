@@ -38,7 +38,13 @@ const {user, logout}=useAuth();
           
           {
           user?.email?
+          <Box>
+          <NavLink to="/dashboard" style={{textDecoration:'none', color:'white'}}> 
+          <Button color="inherit">Dashboard</Button>
+          </NavLink>
           <Button onClick={logout} color="inherit">Logout</Button>
+          </Box>
+          
           
           :
           <NavLink to="/login" style={{textDecoration:'none', color:'white'}}> 
