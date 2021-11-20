@@ -3,13 +3,13 @@ import { Button, Container, TextField, Typography , CircularProgress, Alert } fr
 import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
 import login from "../../../images/login.png";
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 
 const Register = () => {
 
     const [loginData, setLoginData] = useState({});
-    const history =useHistory();
+    let navigate =useNavigate()
     const {user, registerUser, isLoading, authError}=useAuth();
 
     const handleOnBlur = (e) => {
@@ -30,7 +30,7 @@ const Register = () => {
      return
      
      }
-     registerUser(loginData.email, loginData.password,loginData.name, history)
+     registerUser(loginData.email, loginData.password,loginData.name, navigate)
       e.preventDefault();
     };
     return (
