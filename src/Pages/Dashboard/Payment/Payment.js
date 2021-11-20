@@ -36,8 +36,9 @@ const Payment = () => {
 export default Payment;
 
 /*
-install stripe and stripe react
+1.install stripe and stripe react
 2. set publishable key
+2. stripe react js, install 
 3.elements
 4. check out formData........
 ......
